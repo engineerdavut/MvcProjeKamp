@@ -5,27 +5,31 @@
 
 <!DOCTYPE html>
 
+
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-    <div> 
+    <div>
         <h3> MVC Proje Kamp Table</h3>
         <br />
-        <table>
+        <table class="table table-hover">
             <tr>
                 <th>Kategori Id</th>
                 <th>Kategori Adı</th>
                 <th>Açıklama</th>
                 <th>Durum</th>
+                <th>Güncelle</th>
             </tr>
             <tr>
                 <td> 1</td>
                 <td>Eğitim</td>
                 <td>eğitim dersleri</td>
                 <td>true</td>
+                <td><button class="btn btn-success">Güncelle</button></td>
             </tr>
 
             <tr>
@@ -33,9 +37,20 @@
                 <td>Sinema</td>
                 <td>sinema dersleri</td>
                 <td>true</td>
+                <td><button class="btn btn-success">Güncelle</button></td>
+            </tr>
+            <tr>
+                <td> 3</td>
+                <td>Tiyatro</td>
+                <td>açıklama bekleniyor.</td>
+                <td>true</td>
+                <td><button class="btn btn-success">Güncelle</button></td>
             </tr>
 
         </table>
+        <button class="btn btn-info">Yeni Kategori</button>
+        <button class="btn btn-warning">Kategori Listesi</button>
+        <button class="btn btn-danger">Kategori açıklamaları</button>
     </div>
 </body>
 </html>
