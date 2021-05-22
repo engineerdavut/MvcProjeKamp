@@ -19,18 +19,23 @@ namespace BusinessLayer.Concrete
             _categoryDal = categoryDal;
         }
 
+        public void CategoryAdd(Category category)
+        {
+            _categoryDal.Insert(category);
+        }
+
         //GenericRepository<Category> repository = new GenericRepository<Category>();
         //public List<Category> GetAll()
         //{
         //    return repository.List();
         //}
-        
+
 
         //public void CategoryAddBL(Category p)
         //{
         //    //sart....
         //    repository.Insert(p);
-            
+
         //}
 
         public List<Category> GetList()
