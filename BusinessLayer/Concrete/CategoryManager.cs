@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class CategoryManager:ICategoryService
+    public class CategoryManager : ICategoryService
     {
         ICategoryDal _categoryDal;
 
@@ -22,6 +22,22 @@ namespace BusinessLayer.Concrete
         public void CategoryAdd(Category category)
         {
             _categoryDal.Insert(category);
+        }
+
+        public void CategoryDelete(Category category)
+        {
+            _categoryDal.Delete(category);
+
+        }
+
+        public void CategoryUpdate(Category category)
+        {
+            _categoryDal.Update(category);
+        }
+
+        public Category GetById(int id)
+        {
+            return _categoryDal.Get(x=>x.CategoryId==id);
         }
 
         //GenericRepository<Category> repository = new GenericRepository<Category>();
