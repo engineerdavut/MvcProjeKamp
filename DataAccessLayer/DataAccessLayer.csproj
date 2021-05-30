@@ -62,13 +62,41 @@
     <Compile Include="Concrete\Repository\GenericRepository.cs" />
     <Compile Include="EntityFramework\EfAboutDal.cs" />
     <Compile Include="EntityFramework\EfCategoryDal.cs" />
-    <Compile Include="EntityFramework\EfContantDal.cs" />
+    <Compile Include="EntityFramework\EfContactDal.cs" />
     <Compile Include="EntityFramework\EfContentDal.cs" />
     <Compile Include="EntityFramework\EfHeadingDal.cs" />
     <Compile Include="EntityFramework\EfWriterDal.cs" />
     <Compile Include="Migrations\202104231558557_mig1.cs" />
     <Compile Include="Migrations\202104231558557_mig1.designer.cs">
       <DependentUpon>202104231558557_mig1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105250455456_mig_writer_edit.cs" />
+    <Compile Include="Migrations\202105250455456_mig_writer_edit.designer.cs">
+      <DependentUpon>202105250455456_mig_writer_edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105261555216_writertitle.cs" />
+    <Compile Include="Migrations\202105261555216_writertitle.designer.cs">
+      <DependentUpon>202105261555216_writertitle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105271642025_writer_image_size_update.cs" />
+    <Compile Include="Migrations\202105271642025_writer_image_size_update.designer.cs">
+      <DependentUpon>202105271642025_writer_image_size_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105271756258_mig_writerstatusadd.cs" />
+    <Compile Include="Migrations\202105271756258_mig_writerstatusadd.designer.cs">
+      <DependentUpon>202105271756258_mig_writerstatusadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105281643458_mig_add_contentvalue.cs" />
+    <Compile Include="Migrations\202105281643458_mig_add_contentvalue.designer.cs">
+      <DependentUpon>202105281643458_mig_add_contentvalue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105281648461_mig_add_headingstatus.cs" />
+    <Compile Include="Migrations\202105281648461_mig_add_headingstatus.designer.cs">
+      <DependentUpon>202105281648461_mig_add_headingstatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105292305453_mig_add_messagedate.cs" />
+    <Compile Include="Migrations\202105292305453_mig_add_messagedate.designer.cs">
+      <DependentUpon>202105292305453_mig_add_messagedate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,6 +114,27 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202104231558557_mig1.resx">
       <DependentUpon>202104231558557_mig1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105250455456_mig_writer_edit.resx">
+      <DependentUpon>202105250455456_mig_writer_edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105261555216_writertitle.resx">
+      <DependentUpon>202105261555216_writertitle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105271642025_writer_image_size_update.resx">
+      <DependentUpon>202105271642025_writer_image_size_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105271756258_mig_writerstatusadd.resx">
+      <DependentUpon>202105271756258_mig_writerstatusadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105281643458_mig_add_contentvalue.resx">
+      <DependentUpon>202105281643458_mig_add_contentvalue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105281648461_mig_add_headingstatus.resx">
+      <DependentUpon>202105281648461_mig_add_headingstatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105292305453_mig_add_messagedate.resx">
+      <DependentUpon>202105292305453_mig_add_messagedate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
